@@ -18,3 +18,12 @@ expo install expo-asset
 ```
 expo install expo-font
 ```
+### react-navigation
+```
+npm install @react-navigation/native
+expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view
+```
+### createStackNavigator
+```
+npm install @react-navigation/stack
+```
