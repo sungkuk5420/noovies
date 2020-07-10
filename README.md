@@ -27,3 +27,7 @@ expo install react-native-gesture-handler react-native-reanimated react-native-s
 ```
 npm install @react-navigation/stack
 ```
+### createBottomTabNavigator
+```
+npm install @react-navigation/bottom-tabs
+```
