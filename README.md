@@ -14,3 +14,7 @@ expo init <Project name>
 ```
 expo install expo-asset
 ```
+### expo font
+```
+expo install expo-font
+```
