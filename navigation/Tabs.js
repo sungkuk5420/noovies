@@ -13,7 +13,10 @@ export default (props) => {
     const route = props.route;
     //useEffect(() => {
     useLayoutEffect(() => {// layoutEffect는 user Effect랑 다른점이 레이아웃 변경이 다 끝난후에 작동함
-        navigation.setOptions({ title: getHeaderName(route) })
+        const name = getHeaderName(route);
+        navigation.setOptions({
+            title: name,
+        })
     }, [route]);
 
     return (
