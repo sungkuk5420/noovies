@@ -10,3 +10,7 @@ npm i -g expo-cli
 ```
 expo init <Project name>
 ```
+### expo asset
+```
+expo install expo-asset
+```
