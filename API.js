@@ -16,11 +16,12 @@ const getAnything = async (path, params = {}) => {
             data: { results },
             data
         } = await makeRequest(path, params);
-        return [results || data, null]
-    } catch (error) {
-        return [null, error]
+        return [results || data, null];
+    } catch (e) {
+        console.log(e);
+        return [null, e];
     }
-}
+};
 
 export const movieApi = {
     nowPlaying: () => getAnything("/movie/now_playing"),
@@ -39,3 +40,5 @@ export const tvApi = {
     search: query => getAnything("/search/tv", { query }),
     show: id => getAnything(`/tv/${id}`)
 };
+
+export const apiImage = path => `https://image.tmdb.org/t/p/w500${path}`;

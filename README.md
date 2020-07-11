@@ -35,3 +35,15 @@ npm install @react-navigation/bottom-tabs
 ```
 npm install axios
 ```
+### react-native-web-swiper
+```
+npm install react-native-web-swiper
+```
+### styled-components
+```
+npm install styled-components
+```
+### prop-types
+```
+npm install prop-types
+```

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { View, Text } from "react-native";
-import { movieApi } from "../API";
+import { movieApi } from "../api";
 
 export default () => {
     const [movies, setMovies] = useState({
