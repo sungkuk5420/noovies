@@ -31,3 +31,7 @@ npm install @react-navigation/stack
 ```
 npm install @react-navigation/bottom-tabs
 ```
+### axios
+```
+npm install axios
+```
