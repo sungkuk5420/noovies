@@ -3,6 +3,7 @@ import styled from "styled-components/native";
 import PropTypes from "prop-types";
 import { Image } from "react-native";
 import { apiImage } from "../../api";
+import { trimText } from "../../utils";
 import Votes from "../Votes";
 
 import Poster from "../Poster";
@@ -67,11 +68,11 @@ const Slide = ({ id, title, backgroundImage, votes, overview, poster }) => {
       <Content>
         <Poster url={apiImage(poster)} />
         <Data>
-          <Title>{title.length > 30 ? `${title.slice(0, 30)}...` : title}</Title>
+          <Title>{trimText(title, 30)}</Title>
           <VotesContainer>
             <Votes votes={votes}></Votes>
           </VotesContainer>
-          <Overview>{overview.length > 120 ? `${overview.slice(0, 120)}...` : overview}</Overview>
+          <Overview>{trimText(overview, 120)}</Overview>
 
           <TouchableOpacity>
             <Button>
@@ -87,8 +88,8 @@ const Slide = ({ id, title, backgroundImage, votes, overview, poster }) => {
 Slide.propTypes = {
   id: PropTypes.number.isRequired,
   title: PropTypes.string.isRequired,
-  backgroundImage: PropTypes.string.isRequired,
   votes: PropTypes.number.isRequired,
+  poster: PropTypes.string.isRequired,
   overview: PropTypes.string.isRequired
 };
 
